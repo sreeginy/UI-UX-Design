@@ -1,24 +1,14 @@
-/*!
-  * Bootstrap v5.2.3 (https://getbootstrap.com/)
-  * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-  */
+
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory());
 })(this, (function () { 'use strict';
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/index.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+
   const MAX_UID = 1000000;
   const MILLISECONDS_MULTIPLIER = 1000;
-  const TRANSITION_END = 'transitionend'; // Shout-out Angus Croll (https://goo.gl/pxwQGp)
-
+  const TRANSITION_END = 'transitionend'; 
   const toType = object => {
     if (object === null || object === undefined) {
       return `${object}`;
@@ -43,14 +33,11 @@
     let selector = element.getAttribute('data-bs-target');
 
     if (!selector || selector === '#') {
-      let hrefAttribute = element.getAttribute('href'); // The only valid content that could double as a selector are IDs or classes,
-      // so everything starting with `#` or `.`. If a "real" URL is used as the selector,
-      // `document.querySelector` will rightfully complain it is invalid.
-      // See https://github.com/twbs/bootstrap/issues/32273
+      let hrefAttribute = element.getAttribute('href'); 
 
       if (!hrefAttribute || !hrefAttribute.includes('#') && !hrefAttribute.startsWith('.')) {
         return null;
-      } // Just in case some CMS puts out a full URL with the anchor appended
+      }
 
 
       if (hrefAttribute.includes('#') && !hrefAttribute.startsWith('#')) {
@@ -81,7 +68,7 @@
   const getTransitionDurationFromElement = element => {
     if (!element) {
       return 0;
-    } // Get transition-duration of the element
+    } 
 
 
     let {
@@ -198,14 +185,7 @@
   };
 
   const noop = () => {};
-  /**
-   * Trick to restart an element's animation
-   *
-   * @param {HTMLElement} element
-   * @return void
-   *
-   * @see https://www.charistheo.io/blog/2021/02/restart-a-css-animation-with-javascript/#restarting-a-css-animation
-   */
+
 
 
   const reflow = element => {
@@ -2771,12 +2751,6 @@
     return getScrollParent(getParentNode(node));
   }
 
-  /*
-  given a DOM element, return the list of all scroll parents, up the list of ancesors
-  until we get to the top window object. This list is what we attach scroll listeners
-  to, because if any of these parent elements scroll, we'll need to re-calculate the
-  reference element's position.
-  */
 
   function listScrollParents(element, list) {
     var _element$ownerDocumen;
@@ -7036,24 +7010,15 @@
     }
 
   }
-  /**
-   * Data API implementation
-   */
+
 
 
   enableDismissTrigger(Toast);
-  /**
-   * jQuery
-   */
+
 
   defineJQueryPlugin(Toast);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): index.umd.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+
   const index_umd = {
     Alert,
     Button,
@@ -7072,4 +7037,3 @@
   return index_umd;
 
 }));
-//# sourceMappingURL=bootstrap.bundle.js.map
