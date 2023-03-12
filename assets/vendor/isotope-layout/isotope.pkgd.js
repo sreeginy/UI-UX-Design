@@ -3479,14 +3479,13 @@ var trim = String.prototype.trim ?
   proto.remove = function( elems ) {
     elems = utils.makeArray( elems );
     var removeItems = this.getItems( elems );
-    // do regular thing
+
     _remove.call( this, elems );
-    // bail if no items to remove
+
     var len = removeItems && removeItems.length;
-    // remove elems from filteredItems
+
     for ( var i=0; len && i < len; i++ ) {
       var item = removeItems[i];
-      // remove item from collection
       utils.removeFrom( this.filteredItems, item );
     }
   };
@@ -3522,7 +3521,7 @@ var trim = String.prototype.trim ?
     return returnValue;
   };
 
-  // ----- helper methods ----- //
+  // ---- helper methods -----//
 
   /**
    * getter method for getting filtered item elements
