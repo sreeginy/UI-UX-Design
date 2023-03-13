@@ -3474,7 +3474,7 @@ var trim = String.prototype.trim ?
     }
     this.reveal( filteredInsertItems );
   };
-  
+
 
   var _remove = proto.remove;
   proto.remove = function( elems ) {
@@ -3502,6 +3502,7 @@ var trim = String.prototype.trim ?
     this._layout();
   };
 
+
   /**
    * trigger fn without transition
    * kind of hacky to have this in the first place
@@ -3522,6 +3523,7 @@ var trim = String.prototype.trim ?
     return returnValue;
   };
 
+
   // ---- helper methods -----//
 
   /**
@@ -3539,4 +3541,5 @@ var trim = String.prototype.trim ?
   return Isotope;
 
 }));
+
 
