@@ -3474,6 +3474,7 @@ var trim = String.prototype.trim ?
     }
     this.reveal( filteredInsertItems );
   };
+  
 
   var _remove = proto.remove;
   proto.remove = function( elems ) {
