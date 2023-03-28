@@ -16,11 +16,9 @@
   backface-visibility: hidden;
   outline: none;
 }
-
 .glightbox-container.inactive {
   display: none;
 }
-
 .glightbox-container .gcontainer {
   position: relative;
   width: 100%;

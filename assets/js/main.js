@@ -68,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   });
-
   /**
    * Scroll top button
    */
@@ -84,7 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
       behavior: 'smooth'
     }));
   }
-
   /**
    * Initiate glightbox
    */
@@ -128,7 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
   }
-
   /**
    * Init swiper slider with 1 slide at once in desktop view
    */
@@ -183,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
-
 
   new PureCounter();
 
