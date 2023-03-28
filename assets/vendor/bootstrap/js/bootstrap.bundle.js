@@ -6737,7 +6737,6 @@
         element.setAttribute(attribute, value);
       }
     }
-
     _elemIsActive(elem) {
       return elem.classList.contains(CLASS_NAME_ACTIVE);
     } // Try to get the inner element (usually the .nav-link)
@@ -6773,7 +6772,6 @@
   /**
    * Data API implementation
    */
-
 
   EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_DATA_TOGGLE, function (event) {
     if (['A', 'AREA'].includes(this.tagName)) {
