@@ -5,14 +5,12 @@
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Work Sans", sans-serif;
 }
-
 /* Colors */
 :root {
   --color-default: #364d59;
   --color-primary: #feb900;
   --color-secondary: #52565e;
 }
-
 /* Smooth scroll behavior */
 :root {
   scroll-behavior: smooth;
@@ -26,17 +24,14 @@ body {
   color: var(--color-default);
   overflow-x: hidden;
 }
-
 a {
   color: var(--color-primary);
   text-decoration: none;
 }
-
 a:hover {
   color: #ffc732;
   text-decoration: none;
 }
-
 h1,
 h2,
 h3,
@@ -45,7 +40,6 @@ h5,
 h6 {
   font-family: var(--font-primary);
 }
-
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -53,23 +47,19 @@ section {
   padding: 80px 0;
   overflow: hidden;
 }
-
 .section-bg {
   background-color: #f5f6f7;
 }
-
 .section-header {
   text-align: center;
   padding-bottom: 70px;
 }
-
 .section-header h2 {
   font-size: 32px;
   font-weight: 700;
   position: relative;
   color: #2e3135;
 }
-
 .section-header h2:before,
 .section-header h2:after {
   content: "";
@@ -78,11 +68,9 @@ section {
   background: var(--color-primary);
   display: inline-block;
 }
-
 .section-header h2:before {
   margin: 0 15px 10px 0;
 }
-
 .section-header h2:after {
   margin: 0 0 10px 15px;
 }
