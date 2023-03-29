@@ -69,22 +69,18 @@
   justify-content: center;
   opacity: 0;
 }
-
 .glightbox-container .gslide.current {
   opacity: 1;
   z-index: 99999;
   position: relative;
 }
-
 .glightbox-container .gslide.prev {
   opacity: 1;
   z-index: 9999;
 }
-
 .glightbox-container .gslide-inner-content {
   width: 100%;
 }
-
 .glightbox-container .ginner-container {
   position: relative;
   width: 100%;
