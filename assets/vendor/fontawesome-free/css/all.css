@@ -1,7 +1,6 @@
 .fa {
   font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900); }
-
 .fa,
 .fa-classic,
 .fa-sharp,
@@ -18,7 +17,6 @@
   font-variant: normal;
   line-height: 1;
   text-rendering: auto; }
-
 .fas,
 .fa-classic,
 .fa-solid,
